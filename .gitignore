@@ -1,0 +1,68 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Cache files
+*.cache
+*.log
+*.bak
+*.tmp
+*.swp
+*.temp
+*.~*
+*.orig
+
+# Test and coverage reports
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+.nox/
+.pytest_cache/
+.coverage.*
+
+# Build files and directories
+.build/
+dist/
+*.egg-info/
+.eggs/
+build/
+
+# Packaging artifacts
+*.egg
+*.whl
+*.manifest
+
+# Documentation
+docs/_build/
+
+# PyInstaller
+*.spec
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Ehthumbs.db
+Desktop.ini
+
+# custom
+.env
