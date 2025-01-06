@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pizzaapp"
+version = "0.1.0"
+description = ""
+authors = ["imnotdev25 <85677268+imnotdev25@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<=3.13"
+sqlmodel = "^0.0.22"
+crewai = {extras = ["tools"], version = "^0.86.0"}
+psycopg2-binary = "^2.9.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
