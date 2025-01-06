@@ -5,8 +5,8 @@ from crewai import Crew, Process
 
 # --- Crew Definitions ---
 order_crew = Crew(
-    agents=[user_agent],
-    tasks=[user_task],
+    agents=[user_agent, kitchen_agent, delivery_agent],
+    tasks=[user_task, kitchen_task, delivery_task],
     process=Process.sequential,
     verbose=True
 )

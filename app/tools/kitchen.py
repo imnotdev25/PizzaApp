@@ -1,4 +1,4 @@
-from app.models import Chef, DeliveryBoy
+from app.models import Chef, DeliveryBoy, Order
 from crewai.tools import tool
 from app.db import session
 
@@ -11,6 +11,8 @@ def assign_chef(order_id: int) -> str:
 
     chef.is_free = False
     chef.current_order_id = order_id
+    order = session.query(Order).filter(Order.id == order_id).first()
+    order.assigned_to = chef.id
     session.commit()
     return f"Chef {chef.name} assigned to Order {order_id}."
 
